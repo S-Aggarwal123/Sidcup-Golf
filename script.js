@@ -8,15 +8,9 @@ document.addEventListener("mousemove", function (dets) {
   crsr.style.left = dets.x + 20 + "px";
   crsr.style.top = dets.y + "px";
 
-  // sirf itna krne se mera blur ka left corner hi pointer k sath chl rha h
-
-  //to mujhe sath chlane m ya to kuch pixels m add kr du crsr m ya phir minus kr du blur se
-
   blur.style.left = dets.x - 100 + "px";
   blur.style.top = dets.y - 100 + "px";
 });
-
-//nav k sare h4
 
 var h4all = document.querySelectorAll("#nav h4");
 h4all.forEach(function (elem) {
