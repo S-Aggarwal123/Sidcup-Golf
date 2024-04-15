@@ -11,8 +11,6 @@ html,body{
   width: 100%;
 }
 
-/* isse kya hoga basically jo bhi element select kia jaega by any user then hoga kya vha pe uska background color white ho jaega and color should be green  */
-
 *::selection{
   background-color: #fff;
   color :#95C11E;
@@ -30,7 +28,6 @@ html,body{
   position: fixed;
   transition: all linear 0.5s;
 
-  /* as the nav bar is given fixed so it is shown on top and and i gave the video also fixed but video code is written after the nav so video is on top that's why we give z-index to be 99 */
 
   z-index: 99;
 
@@ -69,15 +66,10 @@ html,body{
   position:fixed;
   filter: blur(70px);
   z-index: 9;
-  /* to make this cursor show as well as on the page 1 and page 2 as well so we give it the zindex as 9 and other to be 10 */
 }
 
 video{
-  /* agr m video ko fixed nhi de rhi hu to ye as a seperate page represent kr rha h  and scrolling part generate kr rha h */
   position: fixed;
-
-  /* aur m video ko height and width 100% set kr rhi uske parent elment k according that is whole body  */
-
 
   height: 100%;
   width: 100%;
@@ -89,9 +81,6 @@ video{
 }
 
 #main{
-  /* main ko maine kuch height bhi nhi di h to agr m uske child ko percentage m kuch dungi to kya uska kuch meaning rha jaega nahi to m apne pages ko vh m height dungi and and..
-
-  main ko maine height nhi di h kyoki it is only a wrapper function */
   position: relative;
   background-color: rgba(0, 0, 0, 0.38);
 }
@@ -140,7 +129,6 @@ video{
 }
 
 #page2 {
-  /* this had to be given because when we add cards the content is overflowing from page 2  */
   min-height: 100vh;
   width: 100%;
   z-index: 10;
@@ -281,10 +269,6 @@ video{
   background-image: url(/card3.avif);
 }
 
-
-/* dekho jb aap overlay class pr height and width 100% apply krte ho to border radius khatam ho jata h kyoki ye parent element ka pura space occupy kr leta h  */
-
-
 .overlay{
   height: 100%;
   width: 100%;
@@ -316,8 +300,6 @@ video{
   font-weight: 500;
 }
 
-
-/* card pr hover kro to uske overlay pr effect */
 .card:hover .overlay{
   opacity: 1;
 }
@@ -360,7 +342,6 @@ video{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position ko relative islie dia h kyoki agr maine img ko absolute dia to vo top pr dikhne lgi thi and overflow hone lga tha page and jaise hi maine position ko relative dia of parent then it will bind to the parent  */
   position: relative;
   overflow: hidden;
 }
@@ -481,8 +462,7 @@ video{
 }
 
 #footer-in1 img{
-  /* footer in 1 ki image ko agr app percentage m doge to vo dikhegi hi nhi kyoki apne uske parent element ko kuch size nhi dia h */
- height: 100px;
+  height: 100px;
  z-index: 10;
  transform :scale(1);
  transition: all ease-in-out 0.5s;
